@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <title>Piedra, papel y tijeras</title>
+</head>
+<body>
+    <div>
+        <h1>Piedra Papel y Tijeras</h1>
+    </div>
+    <div class="container">
+        <div class="row puntaje">
+            <div id="ganadas" class="col">
+                Jugador
+            </div>
+            <div id="resultado" class="col">
+                
+            </div>
+            <div id="perdidas" class="col">
+                CPU
+            </div>
+        </div>
+        <div id="containerGameplay" class="row">
+            <div id="jugador">
+                <div id="piedra" class="item" onclick="select('piedra')">
+                    <img src="./assets/img/piedra.png" alt="imagen piedra" >
+                </div>
+                <div id="papel" class="item" onclick="select('papel')">
+                    <img src="./assets/img/papel.png" alt="imagen papel" >
+                </div>
+                <div id="tijeras" class="item" onclick="select('tijeras')">
+                    <img src="./assets/img/tijeras.png" alt="imagen tijeras" >
+                </div>
+            </div>
+            <div id="cpu">
+                <div id="piedracpu" class="itemcpu">
+                    <img src="./assets/img/piedra.png" alt="imagen piedra" >
+                </div>
+                <div id="papelcpu" class="itemcpu">
+                    <img src="./assets/img/papel.png" alt="imagen papel" >
+                </div>
+                <div id="tijerascpu" class="itemcpu">
+                    <img src="./assets/img/tijeras.png" alt="imagen tijeras" >
+                </div>
+            </div>
+        </div>
+        <div>
+            <div id="contador" class="row">
+                <h3>Cantidad de juegos: 0</h3>
+            </div>
+        </div>
+    </div>
+    <button onclick="empezardenuevo()">Empezar de nuevo</button>
+</div>
+<script src="./assets/js/main.js"></script>
+</body>
+</html>

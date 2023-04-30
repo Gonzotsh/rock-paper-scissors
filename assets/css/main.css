@@ -1,0 +1,111 @@
+body {
+    background-color: bisque;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/fondo.jpg);
+    background-repeat: repeat;
+    animation: moveBackground 20s linear infinite;
+    transition: all;
+    transition-duration: 0.3s;
+}
+@keyframes moveBackground {
+    from { background-position: 0 0; }
+    to { background-position: 467px 467px; }
+  }
+.row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    color: white;
+    background-color: black;
+    padding: 10px 50px;
+}
+.container{
+    background-color: rgba(255, 255, 255, 0.816);
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+}
+#containerGameplay{
+    width: 800px;
+    height: 400px;
+    background-image: url(../img/fondoGameplay.jpg);
+    background-position: center center;
+    transition: all;
+    transition-duration: 0.4s;
+}
+#jugador, #cpu{
+    position: relative;
+    width: 250px;
+    height: 320px;
+    padding-left: 10px;
+    padding-top: 10px;
+    margin: 100px 0;
+    overflow: hidden;
+}
+.item, .itemcpu{
+    width: 85px;
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all;
+    transition-duration: 0.3s;
+    position: absolute;
+    border-radius: 100%;
+    overflow: hidden;
+}
+.item:hover{
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 0 10px black;
+}
+#resultado{
+    text-align: center;
+    font-size: 40px;
+}
+.puntaje .col{
+    font-size: 16px;
+    width: 33%;
+    height: 60px;
+    transition: all;
+    transition-duration: 0.3s;
+}
+#gamezone{
+    width: 100px;
+    text-align: center;
+}
+#piedra, #piedracpu{
+    margin-top: 0;
+}
+#papel, #papelcpu{
+    margin-top: 100px;
+}
+#tijeras, #tijerascpu{
+    margin-top: 200px;
+}
+#piedracpu, #papelcpu, #tijerascpu{
+    margin-left: 150px;
+}
+button{
+    font-size: 14px;
+    border-style: none;
+    background-color: black;
+    color: white;
+    padding: 10px 30px;
+    margin-top: 10px;
+}
+button:hover{
+    background-color: rgb(220, 9, 9);
+}
