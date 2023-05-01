@@ -43,7 +43,7 @@ function select(seleccion){
         document.querySelector("#contador").innerHTML = `<h3> Contador de juegos: ${contadorjuegos} </h3>`;
         document.querySelector("#ganadas").innerHTML = `Jugador: ${ganadas}`;
         document.querySelector("#perdidas").innerHTML = `CPU: ${perdidas}`;
-        setTimeout(reset, 3000);
+        setTimeout(reset, 1500);
     }
 }
 
